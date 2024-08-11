@@ -8,7 +8,7 @@ import { GrDocumentUpload } from "react-icons/gr";
 import { RiChatDeleteFill } from "react-icons/ri";
 import { NavLink } from "react-router-dom";
 
-function AdminSidebar() {
+function AdminSidebar({ setHeading }) {
   const [sidebarOption] = useState([
     { name: "Dashboard", icon: <RxDashboard /> },
     {
@@ -38,6 +38,7 @@ function AdminSidebar() {
         {sidebarOption.map((option, index) => {
           return (
             <NavLink
+              onClick={() => setHeading(option.name)}
               className={`option-div ${option.name}`}
               key={index}
               to={option.name === "Dashboard" ? "" : option.name}

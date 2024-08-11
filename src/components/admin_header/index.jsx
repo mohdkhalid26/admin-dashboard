@@ -2,10 +2,10 @@ import React from "react";
 import "./style.scss";
 import { FaRegBell } from "react-icons/fa";
 import dpImg from "../../assets/dp_img/dp.png";
-function AdminHeader() {
+function AdminHeader({heading}) {
   return (
     <div className="admin-header">
-      <span className="admin-header-left-span">Dashboard</span>
+      <span className="admin-header-left-span">{heading}</span>
       <span className="admin-header-right-span">
         <span className="admin-header-right-div-icon-span">
           <FaRegBell />
