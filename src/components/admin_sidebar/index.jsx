@@ -6,9 +6,11 @@ import { RxDashboard } from "react-icons/rx";
 import { FaRegEdit } from "react-icons/fa";
 import { GrDocumentUpload } from "react-icons/gr";
 import { RiChatDeleteFill } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function AdminSidebar({ setHeading }) {
+  
+  let navigate = useNavigate()
   const [sidebarOption] = useState([
     { name: "Dashboard", icon: <RxDashboard /> },
     {
@@ -27,7 +29,7 @@ function AdminSidebar({ setHeading }) {
   return (
     <div className="admin-sidebar">
       <div className="admin-sidebar-head-div">
-        <span className="logo-span">
+        <span onClick={()=>navigate("/")} className="logo-span">
           <img width={120} src={logo} alt="logo" />
         </span>
         <span className="icon-span">
