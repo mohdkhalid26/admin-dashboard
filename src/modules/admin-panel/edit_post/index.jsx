@@ -1,9 +1,9 @@
 import React from 'react'
-
-function index() {
+import "./style.scss"
+function EditPost() {
   return (
-    <div>Edit Post</div>
+    <div className='edit-post'>Edit Post</div>
   )
 }
 
-export default index
+export default EditPost

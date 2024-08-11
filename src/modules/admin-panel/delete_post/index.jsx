@@ -1,9 +1,9 @@
 import React from 'react'
-
-function index() {
+import "./style.scss"
+function DeletePost() {
   return (
-    <div>Delete Post</div>
+    <div className='delete-post'>Delete Post</div>
   )
 }
 
-export default index
+export default DeletePost

@@ -1,9 +1,9 @@
 import React from 'react'
-
-function index() {
+import "./index.scss"
+function UploadPost() {
   return (
-    <div>Upload Post</div>
+    <div className='upload-post'>upload</div>
   )
 }
 
-export default index
+export default UploadPost

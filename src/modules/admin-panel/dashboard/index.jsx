@@ -1,9 +1,9 @@
 import React from 'react'
-
-function index() {
+import "./style.scss"
+function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <div className='dashboard'>dashboard</div>
   )
 }
 
-export default index
+export default Dashboard
